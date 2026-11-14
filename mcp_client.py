@@ -17,7 +17,7 @@ import crm_engine
 
 MCP_URL = os.environ.get("MCP_URL", "https://questathon.aihackerscollective.com/api/public/mcp")
 MIN_GAP = 62
-CACHE_PATH = os.environ.get("CACHE_PATH", os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "cache.json"))
+CACHE_PATH = os.environ.get("CACHE_PATH", "/tmp/accountpulse-cache.json")
 _lock = threading.RLock()
 _cache = None
 
